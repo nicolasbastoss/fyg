@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fyg</title>
+</head>
+<body>
+ 
+    <h1 class="fyg">fyg.</h1>
+   
+
+    <img src="Fyg.pdf.png" id="fygimage">
+
+    <h1 class="your-eye">Your eye. Your style</h1>
+
+</body>
+<style>
+
+    .your-eye{
+         font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        letter-spacing: -2px;
+        margin-left: 20px;
+        font-size: 100px;
+    }
+
+    .fyg{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        letter-spacing: -2px;
+        margin-left: 20px;
+        font-size: 60px;
+        
+    }
+
+    #fygimage{
+        
+ max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block; /* remove inline gap */
+
+
+    }
+
+    @media (max-width: 600px) {
+  img {
+    height: 50vh; /* reduce height for better fit */
+    object-position: center top; /* adjust focus point if needed */
+  }
+}
+
+body{
+     margin: 0;
+  overflow-x: hidden; /* prevent horizontal scrolling */
+}
+
+    
+
+   
+
+   
+
+
+</style>
+</html>
