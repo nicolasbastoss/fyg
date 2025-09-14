@@ -6,9 +6,9 @@
     <title>fyg</title>
 </head>
 <body>
- 
+    <div class="topbar">
     <h1 class="fyg">fyg.</h1>
-   
+    </div>
 
     <img src="Fyg.pdf.png" id="fygimage">
 
@@ -17,45 +17,68 @@
 </body>
 <style>
 
-    .your-eye{
-         font-family: 'Times New Roman', Times, serif;
-        font-weight: 400;
-        letter-spacing: -2px;
-        margin-left: 20px;
-        font-size: 100px;
-    }
+  .topbar{
+     padding: 0px 40px;  /* reduced horizontal padding for desktop */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000; /* keep above other content */
+  box-sizing: border-box;
+  border: 1px solid black ;
+    
+  }
 
-    .fyg{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 400;
-        letter-spacing: -2px;
-        margin-left: 20px;
-        font-size: 60px;
-        
-    }
-
-    #fygimage{
-        
- max-width: 100%;
+    #fygimage {
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   display: block; /* remove inline gap */
+  margin: 0 auto; /* center the image */
+}
 
+.your-eye {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-left: 20px;
+  font-size: 100px;
+}
 
-    }
+.fyg {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  letter-spacing: -2px;
+  
+  font-size: 60px;
+}
 
-    @media (max-width: 600px) {
-  img {
-    height: 50vh; /* reduce height for better fit */
-    object-position: center top; /* adjust focus point if needed */
+@media (max-width: 600px) {
+  .topbar {
+    padding: 15px 15px; /* smaller padding for mobile */
+  }
+  #fygimage {
+    height: 50vh; /* maintain a good visible height */
+    max-width: 90vw; /* slightly smaller width */
+  }
+  .your-eye {
+    font-size: 40px; /* smaller font for mobile */
+    margin-left: 10px;
+  }
+  .fyg {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  body {
+    padding: 10px; /* small padding around for spacing */
   }
 }
 
-body{
-     margin: 0;
+body {
+  margin: 0;
   overflow-x: hidden; /* prevent horizontal scrolling */
 }
-
     
 
    
